@@ -1,0 +1,63 @@
+.ad-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px; 
+
+    .red {
+      background-color: #f43f5e;
+    }
+
+    .blue {
+      background-color: #3b82f6;
+    }
+
+    .green {
+      background-color: #22c55e;
+    }
+
+    .yellow {
+      background-color: rgb(224, 224, 14);
+    }
+
+    .ad-card {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      height: 100px;
+      width: 300px; 
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      transition: 400ms;
+      p.tip {
+        font-size: 1em;
+        font-weight: 700;
+      }
+
+      p.second-text {
+        font-size: 0.7em;
+      }
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+
+
+  .home-container {
+  position: relative;
+
+  .home-tab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Add other styles as needed */
+  }
+}
